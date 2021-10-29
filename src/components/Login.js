@@ -2,19 +2,7 @@ import Styles from '../styles/estilos.css';
 
 export default function Login() {
     return (
-        <html lang="en">
-            <head>
-                <meta charset="UTF-8"/>
-                <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-                <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-                <link rel="stylesheet" href="estilos.css"/>
-                <link rel="preconnect" href="https://fonts.googleapis.com"/>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
-                <link rel="icon" type="image/jpg" href="Logo/logopeque.png"/>
-                <title>Login</title>
-            </head>
-            <body>
-
+            
                 <form action="idex.html" class="login-form">
                     
                     <img src="Logo/logotrans.png" alt=""/>
@@ -36,7 +24,6 @@ export default function Login() {
                     </div>
 
                 </form>
-            </body>
-        </html>
+  
     )
 }
