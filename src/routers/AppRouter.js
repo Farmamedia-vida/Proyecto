@@ -15,8 +15,7 @@ import PublicRoute from './PublicRoute'
 
 export default function AppRouter() {
     return (
-        <Router>
-            <Layout>
+        
                 <Switch>
                     <Route exact path ={routes.home} component={HomePage} />
                     <PublicRoute exact path ={routes.login} component={LoginPage} />
@@ -29,7 +28,6 @@ export default function AppRouter() {
                     <Route path ='*' component={NotFoundPage} />
                     
                 </Switch>
-            </Layout>
-        </Router>
+       
     )
 }
