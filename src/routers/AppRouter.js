@@ -1,6 +1,7 @@
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import Layout from '../components/layouts/Layout'
 import AccountPage from '../pages/AccountPage'
+import ProductsPage from '../pages/admin/ProductsPage'
 import UsersPage from '../pages/admin/UsersPage'
 import HomePage from '../pages/HomePage'
 import LoginPage from '../pages/LoginPage'
@@ -19,6 +20,7 @@ export default function AppRouter() {
                     <Route exact path ='/account' component={AccountPage} />
                     <Route exact path ='/market' component={MarketPage} />
                     <Route exact path ='/admin/users' component={UsersPage} />
+                    <Route exact path ='/admin/products' component={ProductsPage} />
                     
                     <Route path ='*' component={NotFoundPage} />
                     
