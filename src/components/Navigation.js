@@ -1,7 +1,29 @@
+import { Navbar, Nav, NavDropdown } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
+
 export default function Navigation() {
     return (
-        <div>
-            <h1>Navigation</h1>
-        </div>
+        <Navbar collapseOnSelect expand='lg' variant='dark' bg='dark'>
+            <Navbar.Brand>
+                Farma
+            </Navbar.Brand>
+            <Navbar.Toggle aria-controls='responsive-navbar-nav'/>
+            <Navbar.Collapse id='responsive-navbar-nav'>
+                <Nav className ='me-auto'>
+                    <Nav.Link as={NavLink} to='/'>Inicio</Nav.Link>
+                    <Nav.Link as={NavLink} to='/market'>
+                        Mercado
+                    </Nav.Link>
+                    <NavDropdown title='Admin'>
+                        <NavDropdown.Item>Productos</NavDropdown.Item>    
+                    </NavDropdown>
+                </Nav>         
+                <Nav>
+                    <Nav.Link as={NavLink} to='/login'>Iniciar sesion</Nav.Link>
+                    <Nav.Link as={NavLink} to='/register'>Registrarse</Nav.Link>
+                    <Nav.Link as={NavLink} to='/account'>Mi cuenta</Nav.Link>
+                </Nav>       
+            </Navbar.Collapse>
+        </Navbar>
     )
 }
