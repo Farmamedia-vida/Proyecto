@@ -1,4 +1,3 @@
-import useAuth from '../auth/useAuth';
 import './styles/Login.css'
 
 const UserCredentials = {};
