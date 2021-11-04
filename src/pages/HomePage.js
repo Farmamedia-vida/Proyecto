@@ -1,7 +1,14 @@
+import { Container, Row, Col } from "react-bootstrap";
+
 export default function HomePage() {
     return (
-        <div>
-            <h1>HomePage</h1>
-        </div>
+        <Container>
+            <Row className='mt-5'>
+                <Col>
+                    <h1>HomePage</h1>  
+                </Col>
+            </Row>
+            
+        </Container>
     )
 }
