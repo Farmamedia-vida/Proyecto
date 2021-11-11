@@ -1,5 +1,4 @@
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
-import Layout from '../components/layouts/Layout'
+import { Switch, Route} from 'react-router-dom'
 import roles from '../helpers/roles'
 import routes from '../helpers/routes'
 import AccountPage from '../pages/AccountPage'
